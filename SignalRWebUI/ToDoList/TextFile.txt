@@ -1,0 +1,75 @@
+﻿--CategoryCount
+--ProductCount
+--aktif kategori sayısı
+--pasif kategori sayısı
+
+--Kategori adına göre ürün sayısı
+--Kategori adına göre ürün sayısı2
+
+--ortalama fiyat 
+--en yüksek ürünlü fiyat  (select productName from products where price=(select Max(price) from products)
+--en düşük ürünlü fiyat		(select productName from products where price=(select Min(price) from products)
+--ortalama hamburger fiyatı
+
+-- Toplam sipariş sayısı
+--Aktif sipariş sayısı
+-- Son sipariş tutarı  select top(1)* from orders order by orderID desc
+--Kasadaki tutar
+--bu günkü kazanç
+--Masa Sayısı
+
+
+
+
+
+Select Sum(TotalPrice) from OrderDetails where OrderID=3
+Select Sum(TotalPrice) from OrderDetails where OrderID=2
+Select Sum(TotalPrice) from OrderDetails where OrderID=1
+
+select*from OrderDetails where OrderId=3
+
+
+select ProductName,Count,UnitPrice,TotalPrice From OrderDetails 
+inner Join Products
+on OrderDetails.ProductID=Products.ProductID 
+where OrderID=3
+
+
+// sipariş arttıkça masanın hesabına eklenmesi için 
+Create Trigger IncreaseOrderTotalPrice
+On OrderDetails
+After Insert
+As
+Declare @OrderID int 
+Declare @OrderPrice decimal
+select @OrderID = OrderID From inserted 
+select @OrderPrice=TotalPrice from inserted
+Update Orders Set TotalPrice=TotalPrice + @OrderPrice where OrderID=@OrderID
+
+
+// sipariş iptalinde masanın hesabından çıkarılması için 
+Create Trigger DecreaseOrderTotalPrice
+On OrderDetails
+After Delete
+As
+Declare @OrderID int 
+Declare @OrderPrice decimal
+select @OrderID = OrderID From deleted 
+select @OrderPrice=TotalPrice from deleted
+Update Orders Set TotalPrice=TotalPrice - @OrderPrice where OrderID=@OrderID
+
+
+// kasa daki paranın artması için 
+Create Trigger SumMoneyCase
+On Orders
+After Update
+As
+Declare @Description Nvarchar(Max) 
+Declare @TotalPrice Decimal(18,2)
+
+select @Description=Description from inserted
+select @TotalPrice=TotalPrice from inserted
+if(@Description='Hesap Kapatıldı')
+begin 
+Update MoneyCases set TotalAmount = TotalAmount+@TotalPrice
+End
