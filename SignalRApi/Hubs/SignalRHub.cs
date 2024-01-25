@@ -18,6 +18,7 @@ namespace SignalRApi.Hubs
             _orderService = orderService;
             _moneyCaseService = moneyCaseService;
             _menuTableService = menuTableService;
+            _bookingService=bookingService;
         }
 
         public async Task SendStatistic()
@@ -80,6 +81,11 @@ namespace SignalRApi.Hubs
 
             var value3 = _menuTableService.TMenuTableCount();
             await Clients.All.SendAsync("ReceiveTMenuTableCount", value3);
+        }
+        public async Task GetBookingList()
+        {
+            var values = _bookingService.TGetListAll();
+            await Clients.All.SendAsync("ReceiveBookingList", values);
         }
 
     }
