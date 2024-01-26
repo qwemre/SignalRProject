@@ -3,22 +3,22 @@ using SignalR.BusinessLayer.Abstract;
 
 namespace SignalRApi.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class MoneyCaseController : ControllerBase
-    {
-        private readonly IMoneyCaseService _moneyCaseService;
+	[Route("api/[controller]")]
+	[ApiController]
+	public class MoneyCaseController : ControllerBase
+	{
+		private readonly IMoneyCaseService _moneyCaseService;
 
-        public MoneyCaseController(IMoneyCaseService moneyCaseService)
-        {
-            _moneyCaseService = moneyCaseService;
-        }
+		public MoneyCaseController(IMoneyCaseService moneyCaseService)
+		{
+			_moneyCaseService = moneyCaseService;
+		}
 
-        [HttpGet()]
-        public IActionResult TotalMoneyCaseAmount()
-        {
-            return Ok(_moneyCaseService.TTotalMoneyCaseAmount());
-        }
+		[HttpGet()]
+		public IActionResult TotalMoneyCaseAmount()
+		{
+			return Ok(_moneyCaseService.TTotalMoneyCaseAmount());
+		}
 
-    }
+	}
 }

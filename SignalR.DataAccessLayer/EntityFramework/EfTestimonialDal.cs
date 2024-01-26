@@ -5,10 +5,10 @@ using SignalR.EntitiyLayer.Entities;
 
 namespace SignalR.DataAccessLayer.EntityFramework
 {
-    public class EfTestimonialDal : GenericRepository<Testimonial>, ITestimonialDal
-    {
-        public EfTestimonialDal(SignalRContect context) : base(context)
-        {
-        }
-    }
+	public class EfTestimonialDal : GenericRepository<Testimonial>, ITestimonialDal
+	{
+		public EfTestimonialDal(SignalRContect context) : base(context)
+		{
+		}
+	}
 }

@@ -5,10 +5,10 @@ using SignalR.EntitiyLayer.Entities;
 
 namespace SignalR.DataAccessLayer.EntityFramework
 {
-    public class EfDiscountDal : GenericRepository<Discount>, IDiscountDal
-    {
-        public EfDiscountDal(SignalRContect context) : base(context)
-        {
-        }
-    }
+	public class EfDiscountDal : GenericRepository<Discount>, IDiscountDal
+	{
+		public EfDiscountDal(SignalRContect context) : base(context)
+		{
+		}
+	}
 }

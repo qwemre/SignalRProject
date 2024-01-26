@@ -2,7 +2,7 @@
 
 namespace SignalR.BusinessLayer.Abstract
 {
-    public interface ISocialMediaService : IGenericService<SocialMedia>
-    {
-    }
+	public interface ISocialMediaService : IGenericService<SocialMedia>
+	{
+	}
 }

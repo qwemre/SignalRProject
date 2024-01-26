@@ -2,11 +2,11 @@
 
 namespace SignalRWebUI.ViewComponents.LayoutComponent
 {
-    public class _LayoutNavbarComponentPartial : ViewComponent
-    {
-        public IViewComponentResult Invoke()
-        {
-            return View();
-        }
-    }
+	public class _LayoutNavbarComponentPartial : ViewComponent
+	{
+		public IViewComponentResult Invoke()
+		{
+			return View();
+		}
+	}
 }

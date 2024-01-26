@@ -5,10 +5,10 @@ using SignalR.EntitiyLayer.Entities;
 
 namespace SignalR.DataAccessLayer.EntityFramework
 {
-    public class EfSocialMediaDal : GenericRepository<SocialMedia>, ISocialMediaDal
-    {
-        public EfSocialMediaDal(SignalRContect context) : base(context)
-        {
-        }
-    }
+	public class EfSocialMediaDal : GenericRepository<SocialMedia>, ISocialMediaDal
+	{
+		public EfSocialMediaDal(SignalRContect context) : base(context)
+		{
+		}
+	}
 }

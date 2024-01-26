@@ -2,11 +2,11 @@
 
 namespace SignalRWebUI.Controllers
 {
-    public class ProgressBarsController : Controller
-    {
-        public IActionResult Index()
-        {
-            return View();
-        }
-    }
+	public class ProgressBarsController : Controller
+	{
+		public IActionResult Index()
+		{
+			return View();
+		}
+	}
 }

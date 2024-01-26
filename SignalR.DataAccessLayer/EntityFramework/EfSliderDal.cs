@@ -5,10 +5,10 @@ using SignalR.EntitiyLayer.Entities;
 
 namespace SignalR.DataAccessLayer.EntityFramework
 {
-    public class EfSliderDal : GenericRepository<Slider>, ISliderDal
-    {
-        public EfSliderDal(SignalRContect context) : base(context)
-        {
-        }
-    }
+	public class EfSliderDal : GenericRepository<Slider>, ISliderDal
+	{
+		public EfSliderDal(SignalRContect context) : base(context)
+		{
+		}
+	}
 }
