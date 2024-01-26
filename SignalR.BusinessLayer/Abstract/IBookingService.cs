@@ -2,7 +2,7 @@
 
 namespace SignalR.BusinessLayer.Abstract
 {
-	public interface IBookingService : IGenericService<Booking>
-	{
-	}
+    public interface IBookingService : IGenericService<Booking>
+    {
+    }
 }

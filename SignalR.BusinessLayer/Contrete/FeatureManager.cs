@@ -4,38 +4,38 @@ using SignalR.EntitiyLayer.Entities;
 
 namespace SignalR.BusinessLayer.Contrete
 {
-	public class FeatureManager : IFeatureService
-	{
-		private readonly IFeatureDal _featureDal;
+    public class FeatureManager : IFeatureService
+    {
+        private readonly IFeatureDal _featureDal;
 
-		public FeatureManager(IFeatureDal featureDal)
-		{
-			_featureDal = featureDal;
-		}
+        public FeatureManager(IFeatureDal featureDal)
+        {
+            _featureDal = featureDal;
+        }
 
-		public void TAdd(Feature entity)
-		{
-			_featureDal.Add(entity);
-		}
+        public void TAdd(Feature entity)
+        {
+            _featureDal.Add(entity);
+        }
 
-		public void TDelete(Feature entity)
-		{
-			_featureDal.Delete(entity);
-		}
+        public void TDelete(Feature entity)
+        {
+            _featureDal.Delete(entity);
+        }
 
-		public Feature TGetByID(int id)
-		{
-			return _featureDal.GetByID(id);
-		}
+        public Feature TGetByID(int id)
+        {
+            return _featureDal.GetByID(id);
+        }
 
-		public List<Feature> TGetListAll()
-		{
-			return _featureDal.GetListAll();
-		}
+        public List<Feature> TGetListAll()
+        {
+            return _featureDal.GetListAll();
+        }
 
-		public void TUpdate(Feature entity)
-		{
-			_featureDal.Update(entity);
-		}
-	}
+        public void TUpdate(Feature entity)
+        {
+            _featureDal.Update(entity);
+        }
+    }
 }

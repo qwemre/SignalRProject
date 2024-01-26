@@ -5,10 +5,10 @@ using SignalR.EntitiyLayer.Entities;
 
 namespace SignalR.DataAccessLayer.EntityFramework
 {
-	public class EfFeatureDal : GenericRepository<Feature>, IFeatureDal
-	{
-		public EfFeatureDal(SignalRContect context) : base(context)
-		{
-		}
-	}
+    public class EfFeatureDal : GenericRepository<Feature>, IFeatureDal
+    {
+        public EfFeatureDal(SignalRContect context) : base(context)
+        {
+        }
+    }
 }

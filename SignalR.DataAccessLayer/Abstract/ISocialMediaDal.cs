@@ -2,7 +2,7 @@
 
 namespace SignalR.DataAccessLayer.Abstract
 {
-	public interface ISocialMediaDal : IGenericDal<SocialMedia>
-	{
-	}
+    public interface ISocialMediaDal : IGenericDal<SocialMedia>
+    {
+    }
 }

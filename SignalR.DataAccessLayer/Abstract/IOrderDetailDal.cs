@@ -2,7 +2,7 @@
 
 namespace SignalR.DataAccessLayer.Abstract
 {
-	public interface IOrderDetailDal : IGenericDal<OrderDetail>
-	{
-	}
+    public interface IOrderDetailDal : IGenericDal<OrderDetail>
+    {
+    }
 }

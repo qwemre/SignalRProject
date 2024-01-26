@@ -2,9 +2,9 @@
 
 namespace SignalR.DataAccessLayer.Abstract
 {
-	public interface IMoneyCaseDal : IGenericDal<MoneyCase>
-	{
-		decimal TotalMoneyCaseAmount();
+    public interface IMoneyCaseDal : IGenericDal<MoneyCase>
+    {
+        decimal TotalMoneyCaseAmount();
 
-	}
+    }
 }

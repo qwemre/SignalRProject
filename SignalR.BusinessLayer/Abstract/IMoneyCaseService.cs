@@ -2,9 +2,9 @@
 
 namespace SignalR.BusinessLayer.Abstract
 {
-	public interface IMoneyCaseService : IGenericService<MoneyCase>
-	{
-		decimal TTotalMoneyCaseAmount();
+    public interface IMoneyCaseService : IGenericService<MoneyCase>
+    {
+        decimal TTotalMoneyCaseAmount();
 
-	}
+    }
 }

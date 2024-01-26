@@ -2,7 +2,7 @@
 
 namespace SignalR.BusinessLayer.Abstract
 {
-	public interface IDiscountService : IGenericService<Discount>
-	{
-	}
+    public interface IDiscountService : IGenericService<Discount>
+    {
+    }
 }

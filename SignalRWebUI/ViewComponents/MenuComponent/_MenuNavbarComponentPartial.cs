@@ -2,11 +2,11 @@
 
 namespace SignalRWebUI.ViewComponents.MenuComponent
 {
-	public class _MenuNavbarComponentPartial : ViewComponent
-	{
-		public IViewComponentResult Invoke()
-		{
-			return View();
-		}
-	}
+    public class _MenuNavbarComponentPartial : ViewComponent
+    {
+        public IViewComponentResult Invoke()
+        {
+            return View();
+        }
+    }
 }

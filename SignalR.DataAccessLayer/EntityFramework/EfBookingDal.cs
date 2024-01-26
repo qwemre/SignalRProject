@@ -5,10 +5,10 @@ using SignalR.EntitiyLayer.Entities;
 
 namespace SignalR.DataAccessLayer.EntityFramework
 {
-	public class EfBookingDal : GenericRepository<Booking>, IBookingDal
-	{
-		public EfBookingDal(SignalRContect context) : base(context)
-		{
-		}
-	}
+    public class EfBookingDal : GenericRepository<Booking>, IBookingDal
+    {
+        public EfBookingDal(SignalRContect context) : base(context)
+        {
+        }
+    }
 }

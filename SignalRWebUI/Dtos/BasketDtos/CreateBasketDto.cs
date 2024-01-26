@@ -1,9 +1,9 @@
 ﻿namespace SignalRWebUI.Dtos.BasketDtos
 {
-	public class CreateBasketDto
-	{
+    public class CreateBasketDto
+    {
 
-		public int ProductID { get; set; }
+        public int ProductID { get; set; }
 
-	}
+    }
 }

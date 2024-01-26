@@ -2,7 +2,7 @@
 
 namespace SignalR.BusinessLayer.Abstract
 {
-	public interface ISliderService : IGenericService<Slider>
-	{
-	}
+    public interface ISliderService : IGenericService<Slider>
+    {
+    }
 }

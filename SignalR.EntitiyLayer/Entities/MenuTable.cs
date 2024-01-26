@@ -1,11 +1,11 @@
 ﻿namespace SignalR.EntitiyLayer.Entities
 {
-	public class MenuTable
-	{
-		public int MenuTableID { get; set; }
-		public string Name { get; set; }
-		public bool Status { get; set; }
-		public List<Basket> Baskets { get; set; }
+    public class MenuTable
+    {
+        public int MenuTableID { get; set; }
+        public string Name { get; set; }
+        public bool Status { get; set; }
+        public List<Basket> Baskets { get; set; }
 
-	}
+    }
 }

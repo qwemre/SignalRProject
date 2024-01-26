@@ -2,11 +2,11 @@
 
 namespace SignalRWebUI.Controllers
 {
-	public class StatisticController : Controller
-	{
-		public IActionResult Index()
-		{
-			return View();
-		}
-	}
+    public class StatisticController : Controller
+    {
+        public IActionResult Index()
+        {
+            return View();
+        }
+    }
 }

@@ -2,7 +2,7 @@
 
 namespace SignalR.DataAccessLayer.Abstract
 {
-	public interface IBookingDal : IGenericDal<Booking>
-	{
-	}
+    public interface IBookingDal : IGenericDal<Booking>
+    {
+    }
 }
