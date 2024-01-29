@@ -23,8 +23,4 @@
     <ProjectReference Include="..\SignalRWebUI\SignalRWebUI.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Views\" />
-  </ItemGroup>
-
 </Project>
