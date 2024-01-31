@@ -43,6 +43,7 @@ namespace SignalRApi.Controllers
         [HttpPost]
         public IActionResult CreateBasket(CreateBasketDto createBasketDto)
         {
+            //masanın qr ı sorgulanacak adına göre ıdsi bulunacak 
             using var contex = new SignalRContect();
             _basketService.TAdd(new Basket()
             {
