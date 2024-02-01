@@ -7,5 +7,5 @@ namespace SignalR.DataAccessLayer.Abstract
         void BookingStatusApproved(int id);
         void BookingStatusCancelled(int id);
 
-	}
+    }
 }

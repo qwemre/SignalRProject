@@ -16,7 +16,7 @@ namespace SignalR.BusinessLayer.Contrete
 
         public void TAdd(Slider entity)
         {
-           _sliderDal.Add(entity);
+            _sliderDal.Add(entity);
         }
 
         public void TDelete(Slider entity)

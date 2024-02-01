@@ -22,13 +22,13 @@ namespace SignalRWebUI.Controllers
         [HttpPost]
         public async Task<IActionResult> Index(RegisterDto registerDto)
         {
-           var appUser = new AppUser()
-           {
-               Name= registerDto.Name,
-               Surname=registerDto.Surname,
-               Email=registerDto.Mail,
-               UserName=registerDto.UserName,
-           };
+            var appUser = new AppUser()
+            {
+                Name = registerDto.Name,
+                Surname = registerDto.Surname,
+                Email = registerDto.Mail,
+                UserName = registerDto.UserName,
+            };
             var result = await _userManager.CreateAsync(appUser, registerDto.Password);
             if (result.Succeeded)
             {

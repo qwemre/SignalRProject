@@ -5,7 +5,7 @@ using SignalR.EntitiyLayer.Entities;
 namespace SignalR.DataAccessLayer.Concrete
 {
     //identity eklendikten sonra dbcontextten kalıtım almayı bırakıp identitydbcontextten kalıtım alıyor
-    public class SignalRContect : IdentityDbContext<AppUser,AppRole,int>
+    public class SignalRContect : IdentityDbContext<AppUser, AppRole, int>
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -27,9 +27,9 @@ namespace SignalR.DataAccessLayer.Concrete
         public DbSet<Slider> Sliders { get; set; }
         public DbSet<Basket> Baskets { get; set; }
         public DbSet<Notification> Notifications { get; set; }
-		public DbSet<Message> Messages{ get; set; }
+        public DbSet<Message> Messages { get; set; }
 
 
 
-	}
+    }
 }

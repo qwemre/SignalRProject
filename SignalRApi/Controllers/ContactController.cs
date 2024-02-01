@@ -33,11 +33,11 @@ namespace SignalRApi.Controllers
                 Location = createContactDto.Location,
                 Mail = createContactDto.Mail,
                 Phone = createContactDto.Phone,
-                FooterTitle=createContactDto.FooterTitle,
-                OpenDays=createContactDto.OpenDays,
-                OpenDaysDescription=createContactDto.OpenDaysDescription,
+                FooterTitle = createContactDto.FooterTitle,
+                OpenDays = createContactDto.OpenDays,
+                OpenDaysDescription = createContactDto.OpenDaysDescription,
                 OpenHours = createContactDto.OpenHours
-                
+
             };
             _contactService.TAdd(contact);
             return Ok("Bağlantı kurulmuştur");
@@ -60,11 +60,11 @@ namespace SignalRApi.Controllers
                 Mail = updateContactDto.Mail,
                 Phone = updateContactDto.Phone,
                 ContactID = updateContactDto.ContactID,
-				FooterTitle = updateContactDto.FooterTitle,
-				OpenDays = updateContactDto.OpenDays,
-				OpenDaysDescription = updateContactDto.OpenDaysDescription,
-				OpenHours = updateContactDto.OpenHours
-			};
+                FooterTitle = updateContactDto.FooterTitle,
+                OpenDays = updateContactDto.OpenDays,
+                OpenDaysDescription = updateContactDto.OpenDaysDescription,
+                OpenHours = updateContactDto.OpenHours
+            };
             _contactService.TUpdate(contact);
             return Ok("kontak güncellenmiştir");
         }
