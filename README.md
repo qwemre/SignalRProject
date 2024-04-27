@@ -7,6 +7,8 @@ SignalR Cafe Automation is a restaurant management application developed using A
 - Database: MS SQL Server
 - ORM Tool: Entity Framework Core
 - Front-End: WebAPI
+### Api Page
+![Api](/GitImages/api.png)
 
 ### Home
 ![Home](/GitImages/anasayfa.png)
